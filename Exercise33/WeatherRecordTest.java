@@ -30,7 +30,7 @@ class WeatherRecordTest {
 			assertTrue(w3.withinRange());
 	}
 /**
- * this is testing for method rainyRange of class WeatherRecord
+ * this is testing for method rainyRange() of class WeatherRecord
  */
 	@Test
 	void testRainyRange() {

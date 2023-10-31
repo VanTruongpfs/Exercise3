@@ -56,6 +56,8 @@ public class Date {
  *   	assertTrue(d1.thisAuthor(d1));
  *		assertFalse(d2.thisAuthor(d3));
  * 		assertFalse(d3.thisAuthor(d1));
+ * input: Date that
+ * output: boolean
  * 	
  */
 	public boolean thisAuthor(Date that) {

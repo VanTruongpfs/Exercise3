@@ -104,6 +104,8 @@ public class Book {
 *		assertTrue(b1.sameAuthor(b1));
 *		assertFalse(b2.sameAuthor(b3));
 *		assertFalse(b3.sameAuthor(b1));
+*input: Book other
+*output: boolean
  */
 // 	determines whether one book was written by the same author as some other book;
  	public boolean sameAuthor(Book other) {
@@ -122,6 +124,8 @@ public class Book {
 *		assertFalse(b1.sameGeneration(b2));
 *		assertTrue(b2.sameGeneration(b3));
 *		assertFalse(b3.sameGeneration(b1));
+*intput: Book that
+*output: boolean
  */
  // determines whether two books were written by two authors born less than 10 year apart.
  	public boolean sameGeneration(Book that) {

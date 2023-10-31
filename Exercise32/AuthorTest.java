@@ -15,6 +15,21 @@ class AuthorTest {
 		new Author("Pat Conroy", new Date(26,10,1945));
 	}
 /**
+ * this is testing  for method currentAuthor of class Author
+ */
+	@Test
+	void testCurrentAuthor() {
+		new Author("Matthias Felleisen", new Date(19,5,1960));
+		new Author("Daniel P. Friedman", new Date(03,12,1939));
+		new Author("Pat Conroy", new Date(26,10,1945));
+		  Author a1 = new Author("Matthias Felleisen", new Date(19,5,1960));
+		  Author a2 = new Author("Daniel P. Friedman", new Date(03,12,1939));
+		  Author a3 = new Author("Pat Conroy", new Date(26,10,1945));
+		  	assertTrue(a1.currentAuthor(1940));
+		  	assertFalse(a2.currentAuthor(1940));
+		  	assertTrue(a3.currentAuthor(1940));
+	}
+/**
  * this is testing for method thisAuthor() of class Author
  */
 	@Test
@@ -43,6 +58,21 @@ class AuthorTest {
 		  	assertTrue(a1.sameAuthor(a1));
 		   	assertFalse(a2.sameAuthor(a3));
 		  	assertFalse(a3.sameAuthor(a1));
+	}
+/**
+ * this is testing for method sameGeneration() of class Author
+ */
+	@Test
+	void testSameGeneration() {
+		new Author("Matthias Felleisen", new Date(19,5,1960));
+		new Author("Daniel P. Friedman", new Date(03,12,1939));
+		new Author("Pat Conroy", new Date(26,10,1945));
+		   Author a1 = new Author("Matthias Felleisen", new Date(19,5,1960));
+		   Author a2 = new Author("Daniel P. Friedman", new Date(03,12,1939));
+		   Author a3 = new Author("Pat Conroy", new Date(26,10,1945));
+		  	 assertFalse(a1.sameGeneration(a2));
+		   	 assertTrue(a2.sameGeneration(a3));
+		  	 assertFalse(a3.sameGeneration(a1));
 	}
 
 }
